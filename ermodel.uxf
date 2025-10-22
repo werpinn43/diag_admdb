@@ -4,55 +4,51 @@
   <element>
     <id>Entity</id>
     <coordinates>
-      <x>280</x>
-      <y>300</y>
+      <x>990</x>
+      <y>200</y>
       <w>140</w>
-      <h>130</h>
+      <h>50</h>
     </coordinates>
     <panel_attributes>Перемещение 
 --
-+Дата
--
-+getMoveInfo()
-+addNewMove()
-+getFiredEmps(date)
-+</panel_attributes>
+Дата
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Entity</id>
     <coordinates>
-      <x>260</x>
-      <y>500</y>
+      <x>970</x>
+      <y>400</y>
       <w>150</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>Вид перемещения
 --
-+Название
-+Прибыл или уволен</panel_attributes>
+Название
+Прибыл или уволен</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Entity</id>
     <coordinates>
-      <x>550</x>
-      <y>300</y>
+      <x>1260</x>
+      <y>200</y>
       <w>110</w>
-      <h>70</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Работник
 --
 ФИО
 Дата рождения
-</panel_attributes>
+Образование</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>410</x>
-      <y>320</y>
+      <x>1120</x>
+      <y>220</y>
       <w>160</w>
       <h>30</h>
     </coordinates>
@@ -60,28 +56,229 @@
     <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>330</x>
-      <y>420</y>
-      <w>30</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=+-&lt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
-  </element>
-  <element>
     <id>Entity</id>
     <coordinates>
-      <x>70</x>
-      <y>300</y>
+      <x>1260</x>
+      <y>0</y>
       <w>110</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>Должность
 --
-+Название
-+Зарплата</panel_attributes>
+Название
+Зарплата</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>240</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>20</y>
+      <w>160</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-&lt;</panel_attributes>
+    <additional_attributes>140.0;10.0;80.0;10.0;80.0;190.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>1260</x>
+      <y>370</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Подразделение
+--
+Название</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1310</x>
+      <y>270</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1090</x>
+      <y>240</y>
+      <w>220</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-&lt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;200.0;70.0;200.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1270</x>
+      <y>370</y>
+      <w>150</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;-&lt;
+вышестоящее</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;80.0;130.0;80.0;130.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>380</x>
+      <y>360</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Работник
+--
+ФИО
+Год рождения
+Образование
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>160</x>
+      <y>500</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Санкции
+--
+Взыскание ли?
+Размер (.руб)
+Причина
+Дата</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>380</y>
+      <w>170</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>600</x>
+      <y>360</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Подразделения
+--
+Наименование
+Руководитель
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>300</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;
+вышестоящее 
+отделение</panel_attributes>
+    <additional_attributes>80.0;100.0;120.0;100.0;120.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>610</x>
+      <y>520</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Расписание
+--
+Кол-во штатных единиц</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Entity</id>
+    <coordinates>
+      <x>380</x>
+      <y>520</y>
+      <w>130</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Должность
+--
+Наименование
+Размер зарплаты
+Ставка</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>420</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>550</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=+-&lt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>430</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;0-+&lt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>390</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=++-0&lt;</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
